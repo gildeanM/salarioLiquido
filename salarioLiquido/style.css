@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #dfe4ea;
+    background-size: cover;
+    
+}
+section{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}   
+div{
+    padding: 10px;
+}
+#valid{
+    border: 3px solid #ffa502;
+    padding: 10pc;
+    margin: 5%;
+    margin-top: 7%;
+    margin-bottom:7%;
+}
+
+#historic{
+    border: 3px solid #ffa502;
+    padding: 10px;
+    margin-right: 10%;
+}
+#numeroEmprestimos{
+    visibility: hidden;
+}
+
+
+.historico{
+    list-style: none;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Salário Líquido</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+    <div id="valid">
+        <div>
+
+            <label for="seletor">DEPENDENTE</label>
+         <select name="seletor" id="seletor">
+              <option value="PROFESSOR">PROFESSOR</option>
+              <option value="OUTRO">OUTRO</option>
+            </select>
+            <br>
+            <input type="number" id="numeroDependentes" placeholder="N° DEPENDENTES" onblur="number()">
+        
+        </div>
+        <div>
+
+            <input type="checkbox" id="duvida" name="checkbox" onclick="check()">
+            <label for="checkbox">HOUVE EMPRÉSTIMO</label>
+            <br>
+            <input type="number" id="numeroEmprestimos" placeholder="N° EMPRÉSTIMOS" onblur="number()">
+
+        </div>
+        <button type="button" onclick="calc()">CALCULAR</button>    
+        <div id="salario"></div>
+    
+    </div>
+    <div id="historic">
+    <ul>
+        N° dependentes:<li id="01" class="historico" onblur="historico()"></li>
+        N° professores:<li id="02" class="historico" onblur="historico()"></li>
+        N° empréstimos:<li id="03" class="historico" onblur="historico()"></li>
+    </ul>
+    </div>
+    </section>
+    <footer>
+        EEEP AMÉLIA FIGUEIREDO DE LAVOR &copy;
+    </footer>
+</body>
+</html>
